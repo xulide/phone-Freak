@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14C2031" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CurrentTimeInfo" representedClassName="CurrentTimeInfo" syncable="YES">
+        <attribute name="endTime" attributeType="Date" syncable="YES"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="startTime" attributeType="Date" syncable="YES"/>
+        <relationship name="historyTimeInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HistoryTimeInfo" inverseName="currentTimeInfo" inverseEntity="HistoryTimeInfo" syncable="YES"/>
+    </entity>
+    <entity name="HistoryTimeInfo" representedClassName="HistoryTimeInfo" syncable="YES">
+        <attribute name="time" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="totalMinute" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="currentTimeInfo" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CurrentTimeInfo" inverseName="historyTimeInfo" inverseEntity="CurrentTimeInfo" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CurrentTimeInfo" positionX="-63" positionY="-36" width="128" height="118"/>
+        <element name="HistoryTimeInfo" positionX="-378" positionY="24" width="128" height="88"/>
+    </elements>
+</model>

@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8518FF911BA6FCC400646E1B /* CurrentTimeInfoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8518FF901BA6FCC400646E1B /* CurrentTimeInfoCache.m */; };
+		8519A9281BAA364000BBDCFC /* SubHistoryTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8519A9271BAA364000BBDCFC /* SubHistoryTableView.m */; };
+		85232B541BA6E8FF00926DB7 /* CurrentTimeInfo+GetAllProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85232B531BA6E8FF00926DB7 /* CurrentTimeInfo+GetAllProperties.m */; };
+		85287D931B9ACAE9007A22C7 /* TimeAndCoordinateInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 85287D921B9ACAE9007A22C7 /* TimeAndCoordinateInfo.m */; };
+		85287D961B9ADE3F007A22C7 /* SharedTimeAndCoordinateInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 85287D951B9ADE3F007A22C7 /* SharedTimeAndCoordinateInfo.m */; };
+		852FFCA11BB1524500D55FF8 /* UIViewController+getCurrentVisibleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 852FFCA01BB1524400D55FF8 /* UIViewController+getCurrentVisibleController.m */; };
+		8534E0CC1BC9EF5B001895E6 /* UIViewController+RegisterNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 8534E0CB1BC9EF5B001895E6 /* UIViewController+RegisterNotification.m */; settings = {ASSET_TAGS = (); }; };
+		853C41E01BA4367900CC1854 /* SubDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C41DF1BA4367900CC1854 /* SubDrawView.m */; };
+		854B1CA71BB03BDE00001F56 /* subMKMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 854B1CA61BB03BDE00001F56 /* subMKMapView.m */; };
+		8559B01D1BC51BC7000CB446 /* CSqlite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8559B01B1BC51BC7000CB446 /* CSqlite.m */; settings = {ASSET_TAGS = (); }; };
+		8559B01E1BC51BC7000CB446 /* gps.db in Resources */ = {isa = PBXBuildFile; fileRef = 8559B01C1BC51BC7000CB446 /* gps.db */; settings = {ASSET_TAGS = (); }; };
+		8559B0201BC51F4A000CB446 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8559B01F1BC51F4A000CB446 /* libsqlite3.0.tbd */; };
+		8563FC9E1B92C88D0009B34B /* CurrentTimeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8563FC9D1B92C88D0009B34B /* CurrentTimeInfo.m */; };
+		8563FCA11B92C88D0009B34B /* HistoryTimeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8563FCA01B92C88D0009B34B /* HistoryTimeInfo.m */; };
+		8563FCA71B933E190009B34B /* LocationMagager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8563FCA61B933E190009B34B /* LocationMagager.m */; };
+		856435671BAEDC070092F655 /* WGS84TOGCJ02.m in Sources */ = {isa = PBXBuildFile; fileRef = 856435661BAEDC070092F655 /* WGS84TOGCJ02.m */; };
+		856D8CE21B9A86C8004F7A72 /* DateFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 856D8CE11B9A86C8004F7A72 /* DateFormat.m */; };
+		856DD3301B91DF3B00AE76FD /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856DD32E1B91DF3B00AE76FD /* HistoryTableViewController.m */; };
+		856DD3311B91DF3B00AE76FD /* HistoryTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856DD32F1B91DF3B00AE76FD /* HistoryTableViewController.xib */; };
+		856DD3411B91E20400AE76FD /* CurrentDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856DD33F1B91E20400AE76FD /* CurrentDataViewController.m */; };
+		856DD3421B91E20400AE76FD /* CurrentDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856DD3401B91E20400AE76FD /* CurrentDataViewController.xib */; };
+		856DD3461B91E21E00AE76FD /* CurrentMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856DD3441B91E21E00AE76FD /* CurrentMapViewController.m */; };
+		856DD3471B91E21E00AE76FD /* CurrentMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856DD3451B91E21E00AE76FD /* CurrentMapViewController.xib */; };
+		856F536A1B918C6E0002489F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 856F53691B918C6E0002489F /* main.m */; };
+		856F536D1B918C6E0002489F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 856F536C1B918C6E0002489F /* AppDelegate.m */; };
+		856F53701B918C6E0002489F /* phone_Freak.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 856F536E1B918C6E0002489F /* phone_Freak.xcdatamodeld */; };
+		856F53781B918C6E0002489F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856F53771B918C6E0002489F /* Images.xcassets */; };
+		856F537B1B918C6E0002489F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856F53791B918C6E0002489F /* LaunchScreen.xib */; };
+		856F53871B918C6F0002489F /* phone_FreakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 856F53861B918C6F0002489F /* phone_FreakTests.m */; };
+		856F53951B9196FB0002489F /* CoreDataInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 856F53921B9196FB0002489F /* CoreDataInfo.m */; };
+		856F53961B9196FB0002489F /* CrudOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 856F53941B9196FB0002489F /* CrudOperation.m */; };
+		857A0CF21B9988A6004C9F1E /* ParentState.m in Sources */ = {isa = PBXBuildFile; fileRef = 857A0CF11B9988A6004C9F1E /* ParentState.m */; };
+		857A0CF51B998D82004C9F1E /* IdleState.m in Sources */ = {isa = PBXBuildFile; fileRef = 857A0CF41B998D82004C9F1E /* IdleState.m */; };
+		857A0CF81B998D95004C9F1E /* RunningState.m in Sources */ = {isa = PBXBuildFile; fileRef = 857A0CF71B998D95004C9F1E /* RunningState.m */; };
+		857A0CFE1B99A14D004C9F1E /* MovementState.m in Sources */ = {isa = PBXBuildFile; fileRef = 857A0CFD1B99A14D004C9F1E /* MovementState.m */; };
+		857A0D011B99A169004C9F1E /* InitialState.m in Sources */ = {isa = PBXBuildFile; fileRef = 857A0D001B99A169004C9F1E /* InitialState.m */; };
+		857A0D041B99A1C0004C9F1E /* StateContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 857A0D031B99A1C0004C9F1E /* StateContext.m */; };
+		8580C9731BBDF9DD0053D6CE /* CreateCurrentDataViewCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 8580C9721BBDF9DD0053D6CE /* CreateCurrentDataViewCommand.m */; settings = {ASSET_TAGS = (); }; };
+		859289E61BBE628D000177ED /* CommanManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 859289E51BBE628D000177ED /* CommanManagement.m */; settings = {ASSET_TAGS = (); }; };
+		85D7D9E21BC6726A005CF87B /* CreateMapViewCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D7D9E11BC6726A005CF87B /* CreateMapViewCommand.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		856F53811B918C6F0002489F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 856F535C1B918C6E0002489F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 856F53631B918C6E0002489F;
+			remoteInfo = "phone Freak";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8518FF8F1BA6FCC400646E1B /* CurrentTimeInfoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentTimeInfoCache.h; sourceTree = "<group>"; };
+		8518FF901BA6FCC400646E1B /* CurrentTimeInfoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentTimeInfoCache.m; sourceTree = "<group>"; };
+		8519A9261BAA364000BBDCFC /* SubHistoryTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubHistoryTableView.h; sourceTree = "<group>"; };
+		8519A9271BAA364000BBDCFC /* SubHistoryTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubHistoryTableView.m; sourceTree = "<group>"; };
+		85232B521BA6E8FF00926DB7 /* CurrentTimeInfo+GetAllProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CurrentTimeInfo+GetAllProperties.h"; path = "phone Freak/CurrentTimeInfo+GetAllProperties.h"; sourceTree = "<group>"; };
+		85232B531BA6E8FF00926DB7 /* CurrentTimeInfo+GetAllProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CurrentTimeInfo+GetAllProperties.m"; path = "phone Freak/CurrentTimeInfo+GetAllProperties.m"; sourceTree = "<group>"; };
+		85287D911B9ACAE9007A22C7 /* TimeAndCoordinateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeAndCoordinateInfo.h; sourceTree = "<group>"; };
+		85287D921B9ACAE9007A22C7 /* TimeAndCoordinateInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeAndCoordinateInfo.m; sourceTree = "<group>"; };
+		85287D941B9ADE3F007A22C7 /* SharedTimeAndCoordinateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedTimeAndCoordinateInfo.h; sourceTree = "<group>"; };
+		85287D951B9ADE3F007A22C7 /* SharedTimeAndCoordinateInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedTimeAndCoordinateInfo.m; sourceTree = "<group>"; };
+		852FFC9F1BB1524400D55FF8 /* UIViewController+getCurrentVisibleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+getCurrentVisibleController.h"; sourceTree = "<group>"; };
+		852FFCA01BB1524400D55FF8 /* UIViewController+getCurrentVisibleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+getCurrentVisibleController.m"; sourceTree = "<group>"; };
+		8534E0CA1BC9EF5B001895E6 /* UIViewController+RegisterNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RegisterNotification.h"; sourceTree = "<group>"; };
+		8534E0CB1BC9EF5B001895E6 /* UIViewController+RegisterNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RegisterNotification.m"; sourceTree = "<group>"; };
+		853C41DE1BA4367900CC1854 /* SubDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubDrawView.h; sourceTree = "<group>"; };
+		853C41DF1BA4367900CC1854 /* SubDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubDrawView.m; sourceTree = "<group>"; };
+		854B1CA51BB03BDE00001F56 /* subMKMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subMKMapView.h; sourceTree = "<group>"; };
+		854B1CA61BB03BDE00001F56 /* subMKMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = subMKMapView.m; sourceTree = "<group>"; };
+		8559B01A1BC51BC7000CB446 /* CSqlite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSqlite.h; sourceTree = "<group>"; };
+		8559B01B1BC51BC7000CB446 /* CSqlite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSqlite.m; sourceTree = "<group>"; };
+		8559B01C1BC51BC7000CB446 /* gps.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = gps.db; sourceTree = "<group>"; };
+		8559B01F1BC51F4A000CB446 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		8563FC9C1B92C88D0009B34B /* CurrentTimeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurrentTimeInfo.h; path = "phone Freak/CurrentTimeInfo.h"; sourceTree = "<group>"; };
+		8563FC9D1B92C88D0009B34B /* CurrentTimeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CurrentTimeInfo.m; path = "phone Freak/CurrentTimeInfo.m"; sourceTree = "<group>"; };
+		8563FC9F1B92C88D0009B34B /* HistoryTimeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryTimeInfo.h; path = "phone Freak/HistoryTimeInfo.h"; sourceTree = "<group>"; };
+		8563FCA01B92C88D0009B34B /* HistoryTimeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryTimeInfo.m; path = "phone Freak/HistoryTimeInfo.m"; sourceTree = "<group>"; };
+		8563FCA21B92CE5E0009B34B /* constDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constDefine.h; sourceTree = "<group>"; };
+		8563FCA51B933E190009B34B /* LocationMagager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationMagager.h; sourceTree = "<group>"; };
+		8563FCA61B933E190009B34B /* LocationMagager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationMagager.m; sourceTree = "<group>"; };
+		856435651BAEDC070092F655 /* WGS84TOGCJ02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGS84TOGCJ02.h; sourceTree = "<group>"; };
+		856435661BAEDC070092F655 /* WGS84TOGCJ02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGS84TOGCJ02.m; sourceTree = "<group>"; };
+		856D8CE01B9A86C8004F7A72 /* DateFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateFormat.h; sourceTree = "<group>"; };
+		856D8CE11B9A86C8004F7A72 /* DateFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateFormat.m; sourceTree = "<group>"; };
+		856DD32D1B91DF3B00AE76FD /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
+		856DD32E1B91DF3B00AE76FD /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
+		856DD32F1B91DF3B00AE76FD /* HistoryTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryTableViewController.xib; sourceTree = "<group>"; };
+		856DD33E1B91E20400AE76FD /* CurrentDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentDataViewController.h; sourceTree = "<group>"; };
+		856DD33F1B91E20400AE76FD /* CurrentDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentDataViewController.m; sourceTree = "<group>"; };
+		856DD3401B91E20400AE76FD /* CurrentDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentDataViewController.xib; sourceTree = "<group>"; };
+		856DD3431B91E21E00AE76FD /* CurrentMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentMapViewController.h; sourceTree = "<group>"; };
+		856DD3441B91E21E00AE76FD /* CurrentMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentMapViewController.m; sourceTree = "<group>"; };
+		856DD3451B91E21E00AE76FD /* CurrentMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentMapViewController.xib; sourceTree = "<group>"; };
+		856F53641B918C6E0002489F /* phone Freak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "phone Freak.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		856F53681B918C6E0002489F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		856F53691B918C6E0002489F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		856F536B1B918C6E0002489F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		856F536C1B918C6E0002489F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		856F536F1B918C6E0002489F /* phone_Freak.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = phone_Freak.xcdatamodel; sourceTree = "<group>"; };
+		856F53771B918C6E0002489F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		856F537A1B918C6E0002489F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		856F53801B918C6F0002489F /* phone FreakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "phone FreakTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		856F53851B918C6F0002489F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		856F53861B918C6F0002489F /* phone_FreakTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = phone_FreakTests.m; sourceTree = "<group>"; };
+		856F53911B9196FB0002489F /* CoreDataInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataInfo.h; sourceTree = "<group>"; };
+		856F53921B9196FB0002489F /* CoreDataInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataInfo.m; sourceTree = "<group>"; };
+		856F53931B9196FB0002489F /* CrudOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrudOperation.h; sourceTree = "<group>"; };
+		856F53941B9196FB0002489F /* CrudOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrudOperation.m; sourceTree = "<group>"; };
+		857A0CF01B9988A6004C9F1E /* ParentState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentState.h; sourceTree = "<group>"; };
+		857A0CF11B9988A6004C9F1E /* ParentState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentState.m; sourceTree = "<group>"; };
+		857A0CF31B998D82004C9F1E /* IdleState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdleState.h; sourceTree = "<group>"; };
+		857A0CF41B998D82004C9F1E /* IdleState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdleState.m; sourceTree = "<group>"; };
+		857A0CF61B998D95004C9F1E /* RunningState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningState.h; sourceTree = "<group>"; };
+		857A0CF71B998D95004C9F1E /* RunningState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningState.m; sourceTree = "<group>"; };
+		857A0CFC1B99A14D004C9F1E /* MovementState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementState.h; sourceTree = "<group>"; };
+		857A0CFD1B99A14D004C9F1E /* MovementState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovementState.m; sourceTree = "<group>"; };
+		857A0CFF1B99A169004C9F1E /* InitialState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialState.h; sourceTree = "<group>"; };
+		857A0D001B99A169004C9F1E /* InitialState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialState.m; sourceTree = "<group>"; };
+		857A0D021B99A1C0004C9F1E /* StateContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateContext.h; sourceTree = "<group>"; };
+		857A0D031B99A1C0004C9F1E /* StateContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateContext.m; sourceTree = "<group>"; };
+		8580C96D1BBD61F90053D6CE /* NavigatorCommandProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigatorCommandProtocol.h; sourceTree = "<group>"; };
+		8580C9711BBDF9DD0053D6CE /* CreateCurrentDataViewCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateCurrentDataViewCommand.h; sourceTree = "<group>"; };
+		8580C9721BBDF9DD0053D6CE /* CreateCurrentDataViewCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateCurrentDataViewCommand.m; sourceTree = "<group>"; };
+		859289E41BBE628D000177ED /* CommanManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommanManagement.h; sourceTree = "<group>"; };
+		859289E51BBE628D000177ED /* CommanManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommanManagement.m; sourceTree = "<group>"; };
+		85D7D9E01BC6726A005CF87B /* CreateMapViewCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateMapViewCommand.h; sourceTree = "<group>"; };
+		85D7D9E11BC6726A005CF87B /* CreateMapViewCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateMapViewCommand.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		856F53611B918C6E0002489F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8559B0201BC51F4A000CB446 /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		856F537D1B918C6F0002489F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8559B0191BC51B8C000CB446 /* Sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				8559B01F1BC51F4A000CB446 /* libsqlite3.0.tbd */,
+				8559B01A1BC51BC7000CB446 /* CSqlite.h */,
+				8559B01B1BC51BC7000CB446 /* CSqlite.m */,
+				8559B01C1BC51BC7000CB446 /* gps.db */,
+			);
+			name = Sqlite;
+			sourceTree = "<group>";
+		};
+		8563FCA41B933DCF0009B34B /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				8563FCA51B933E190009B34B /* LocationMagager.h */,
+				8563FCA61B933E190009B34B /* LocationMagager.m */,
+				856D8CE01B9A86C8004F7A72 /* DateFormat.h */,
+				856D8CE11B9A86C8004F7A72 /* DateFormat.m */,
+				85287D911B9ACAE9007A22C7 /* TimeAndCoordinateInfo.h */,
+				85287D921B9ACAE9007A22C7 /* TimeAndCoordinateInfo.m */,
+				85287D941B9ADE3F007A22C7 /* SharedTimeAndCoordinateInfo.h */,
+				85287D951B9ADE3F007A22C7 /* SharedTimeAndCoordinateInfo.m */,
+				856435651BAEDC070092F655 /* WGS84TOGCJ02.h */,
+				856435661BAEDC070092F655 /* WGS84TOGCJ02.m */,
+			);
+			name = LocationManager;
+			sourceTree = "<group>";
+		};
+		856DD3331B91DF9800AE76FD /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				856DD32D1B91DF3B00AE76FD /* HistoryTableViewController.h */,
+				856DD32E1B91DF3B00AE76FD /* HistoryTableViewController.m */,
+				856DD32F1B91DF3B00AE76FD /* HistoryTableViewController.xib */,
+				856DD33E1B91E20400AE76FD /* CurrentDataViewController.h */,
+				856DD33F1B91E20400AE76FD /* CurrentDataViewController.m */,
+				856DD3401B91E20400AE76FD /* CurrentDataViewController.xib */,
+				856DD3431B91E21E00AE76FD /* CurrentMapViewController.h */,
+				856DD3441B91E21E00AE76FD /* CurrentMapViewController.m */,
+				856DD3451B91E21E00AE76FD /* CurrentMapViewController.xib */,
+				853C41DE1BA4367900CC1854 /* SubDrawView.h */,
+				853C41DF1BA4367900CC1854 /* SubDrawView.m */,
+				8518FF8F1BA6FCC400646E1B /* CurrentTimeInfoCache.h */,
+				8518FF901BA6FCC400646E1B /* CurrentTimeInfoCache.m */,
+				8519A9261BAA364000BBDCFC /* SubHistoryTableView.h */,
+				8519A9271BAA364000BBDCFC /* SubHistoryTableView.m */,
+				854B1CA51BB03BDE00001F56 /* subMKMapView.h */,
+				854B1CA61BB03BDE00001F56 /* subMKMapView.m */,
+				8534E0CA1BC9EF5B001895E6 /* UIViewController+RegisterNotification.h */,
+				8534E0CB1BC9EF5B001895E6 /* UIViewController+RegisterNotification.m */,
+			);
+			name = Navigator;
+			sourceTree = "<group>";
+		};
+		856F535B1B918C6E0002489F = {
+			isa = PBXGroup;
+			children = (
+				8563FCA21B92CE5E0009B34B /* constDefine.h */,
+				8563FC9F1B92C88D0009B34B /* HistoryTimeInfo.h */,
+				8563FCA01B92C88D0009B34B /* HistoryTimeInfo.m */,
+				8563FC9C1B92C88D0009B34B /* CurrentTimeInfo.h */,
+				85232B521BA6E8FF00926DB7 /* CurrentTimeInfo+GetAllProperties.h */,
+				85232B531BA6E8FF00926DB7 /* CurrentTimeInfo+GetAllProperties.m */,
+				8563FC9D1B92C88D0009B34B /* CurrentTimeInfo.m */,
+				856F53661B918C6E0002489F /* phone Freak */,
+				856F53831B918C6F0002489F /* phone FreakTests */,
+				856F53651B918C6E0002489F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		856F53651B918C6E0002489F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				856F53641B918C6E0002489F /* phone Freak.app */,
+				856F53801B918C6F0002489F /* phone FreakTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		856F53661B918C6E0002489F /* phone Freak */ = {
+			isa = PBXGroup;
+			children = (
+				8559B0191BC51B8C000CB446 /* Sqlite */,
+				8580C96C1BBD617B0053D6CE /* NavigatorCommand */,
+				857A0CEF1B99887A004C9F1E /* StateChange */,
+				8563FCA41B933DCF0009B34B /* LocationManager */,
+				856DD3331B91DF9800AE76FD /* Navigator */,
+				856F53901B9196C60002489F /* CoreData */,
+				856F536B1B918C6E0002489F /* AppDelegate.h */,
+				856F536C1B918C6E0002489F /* AppDelegate.m */,
+				852FFC9F1BB1524400D55FF8 /* UIViewController+getCurrentVisibleController.h */,
+				852FFCA01BB1524400D55FF8 /* UIViewController+getCurrentVisibleController.m */,
+				856F53771B918C6E0002489F /* Images.xcassets */,
+				856F53791B918C6E0002489F /* LaunchScreen.xib */,
+				856F536E1B918C6E0002489F /* phone_Freak.xcdatamodeld */,
+				856F53671B918C6E0002489F /* Supporting Files */,
+			);
+			path = "phone Freak";
+			sourceTree = "<group>";
+		};
+		856F53671B918C6E0002489F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				856F53681B918C6E0002489F /* Info.plist */,
+				856F53691B918C6E0002489F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		856F53831B918C6F0002489F /* phone FreakTests */ = {
+			isa = PBXGroup;
+			children = (
+				856F53861B918C6F0002489F /* phone_FreakTests.m */,
+				856F53841B918C6F0002489F /* Supporting Files */,
+			);
+			path = "phone FreakTests";
+			sourceTree = "<group>";
+		};
+		856F53841B918C6F0002489F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				856F53851B918C6F0002489F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		856F53901B9196C60002489F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				856F53911B9196FB0002489F /* CoreDataInfo.h */,
+				856F53921B9196FB0002489F /* CoreDataInfo.m */,
+				856F53931B9196FB0002489F /* CrudOperation.h */,
+				856F53941B9196FB0002489F /* CrudOperation.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		857A0CEF1B99887A004C9F1E /* StateChange */ = {
+			isa = PBXGroup;
+			children = (
+				857A0CF01B9988A6004C9F1E /* ParentState.h */,
+				857A0CF11B9988A6004C9F1E /* ParentState.m */,
+				857A0CF31B998D82004C9F1E /* IdleState.h */,
+				857A0CF41B998D82004C9F1E /* IdleState.m */,
+				857A0CF61B998D95004C9F1E /* RunningState.h */,
+				857A0CF71B998D95004C9F1E /* RunningState.m */,
+				857A0CFC1B99A14D004C9F1E /* MovementState.h */,
+				857A0CFD1B99A14D004C9F1E /* MovementState.m */,
+				857A0CFF1B99A169004C9F1E /* InitialState.h */,
+				857A0D001B99A169004C9F1E /* InitialState.m */,
+				857A0D021B99A1C0004C9F1E /* StateContext.h */,
+				857A0D031B99A1C0004C9F1E /* StateContext.m */,
+			);
+			name = StateChange;
+			sourceTree = "<group>";
+		};
+		8580C96C1BBD617B0053D6CE /* NavigatorCommand */ = {
+			isa = PBXGroup;
+			children = (
+				8580C96D1BBD61F90053D6CE /* NavigatorCommandProtocol.h */,
+				8580C9711BBDF9DD0053D6CE /* CreateCurrentDataViewCommand.h */,
+				8580C9721BBDF9DD0053D6CE /* CreateCurrentDataViewCommand.m */,
+				859289E41BBE628D000177ED /* CommanManagement.h */,
+				859289E51BBE628D000177ED /* CommanManagement.m */,
+				85D7D9E01BC6726A005CF87B /* CreateMapViewCommand.h */,
+				85D7D9E11BC6726A005CF87B /* CreateMapViewCommand.m */,
+			);
+			name = NavigatorCommand;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		856F53631B918C6E0002489F /* phone Freak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 856F538A1B918C6F0002489F /* Build configuration list for PBXNativeTarget "phone Freak" */;
+			buildPhases = (
+				856F53601B918C6E0002489F /* Sources */,
+				856F53611B918C6E0002489F /* Frameworks */,
+				856F53621B918C6E0002489F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "phone Freak";
+			productName = "phone Freak";
+			productReference = 856F53641B918C6E0002489F /* phone Freak.app */;
+			productType = "com.apple.product-type.application";
+		};
+		856F537F1B918C6F0002489F /* phone FreakTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 856F538D1B918C6F0002489F /* Build configuration list for PBXNativeTarget "phone FreakTests" */;
+			buildPhases = (
+				856F537C1B918C6F0002489F /* Sources */,
+				856F537D1B918C6F0002489F /* Frameworks */,
+				856F537E1B918C6F0002489F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				856F53821B918C6F0002489F /* PBXTargetDependency */,
+			);
+			name = "phone FreakTests";
+			productName = "phone FreakTests";
+			productReference = 856F53801B918C6F0002489F /* phone FreakTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		856F535C1B918C6E0002489F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = persist;
+				TargetAttributes = {
+					856F53631B918C6E0002489F = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 7NYZZDDV6X;
+					};
+					856F537F1B918C6F0002489F = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 856F53631B918C6E0002489F;
+					};
+				};
+			};
+			buildConfigurationList = 856F535F1B918C6E0002489F /* Build configuration list for PBXProject "phone Freak" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 856F535B1B918C6E0002489F;
+			productRefGroup = 856F53651B918C6E0002489F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				856F53631B918C6E0002489F /* phone Freak */,
+				856F537F1B918C6F0002489F /* phone FreakTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		856F53621B918C6E0002489F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856F537B1B918C6E0002489F /* LaunchScreen.xib in Resources */,
+				856F53781B918C6E0002489F /* Images.xcassets in Resources */,
+				8559B01E1BC51BC7000CB446 /* gps.db in Resources */,
+				856DD3471B91E21E00AE76FD /* CurrentMapViewController.xib in Resources */,
+				856DD3421B91E20400AE76FD /* CurrentDataViewController.xib in Resources */,
+				856DD3311B91DF3B00AE76FD /* HistoryTableViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		856F537E1B918C6F0002489F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		856F53601B918C6E0002489F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856F536D1B918C6E0002489F /* AppDelegate.m in Sources */,
+				857A0D041B99A1C0004C9F1E /* StateContext.m in Sources */,
+				85D7D9E21BC6726A005CF87B /* CreateMapViewCommand.m in Sources */,
+				859289E61BBE628D000177ED /* CommanManagement.m in Sources */,
+				856DD3301B91DF3B00AE76FD /* HistoryTableViewController.m in Sources */,
+				8580C9731BBDF9DD0053D6CE /* CreateCurrentDataViewCommand.m in Sources */,
+				8559B01D1BC51BC7000CB446 /* CSqlite.m in Sources */,
+				853C41E01BA4367900CC1854 /* SubDrawView.m in Sources */,
+				857A0D011B99A169004C9F1E /* InitialState.m in Sources */,
+				8518FF911BA6FCC400646E1B /* CurrentTimeInfoCache.m in Sources */,
+				85287D931B9ACAE9007A22C7 /* TimeAndCoordinateInfo.m in Sources */,
+				8563FC9E1B92C88D0009B34B /* CurrentTimeInfo.m in Sources */,
+				857A0CF51B998D82004C9F1E /* IdleState.m in Sources */,
+				857A0CF81B998D95004C9F1E /* RunningState.m in Sources */,
+				856DD3411B91E20400AE76FD /* CurrentDataViewController.m in Sources */,
+				856F53701B918C6E0002489F /* phone_Freak.xcdatamodeld in Sources */,
+				857A0CF21B9988A6004C9F1E /* ParentState.m in Sources */,
+				856F53951B9196FB0002489F /* CoreDataInfo.m in Sources */,
+				857A0CFE1B99A14D004C9F1E /* MovementState.m in Sources */,
+				856F536A1B918C6E0002489F /* main.m in Sources */,
+				856435671BAEDC070092F655 /* WGS84TOGCJ02.m in Sources */,
+				856DD3461B91E21E00AE76FD /* CurrentMapViewController.m in Sources */,
+				8534E0CC1BC9EF5B001895E6 /* UIViewController+RegisterNotification.m in Sources */,
+				85287D961B9ADE3F007A22C7 /* SharedTimeAndCoordinateInfo.m in Sources */,
+				8563FCA71B933E190009B34B /* LocationMagager.m in Sources */,
+				852FFCA11BB1524500D55FF8 /* UIViewController+getCurrentVisibleController.m in Sources */,
+				854B1CA71BB03BDE00001F56 /* subMKMapView.m in Sources */,
+				85232B541BA6E8FF00926DB7 /* CurrentTimeInfo+GetAllProperties.m in Sources */,
+				856D8CE21B9A86C8004F7A72 /* DateFormat.m in Sources */,
+				8563FCA11B92C88D0009B34B /* HistoryTimeInfo.m in Sources */,
+				856F53961B9196FB0002489F /* CrudOperation.m in Sources */,
+				8519A9281BAA364000BBDCFC /* SubHistoryTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		856F537C1B918C6F0002489F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856F53871B918C6F0002489F /* phone_FreakTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		856F53821B918C6F0002489F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 856F53631B918C6E0002489F /* phone Freak */;
+			targetProxy = 856F53811B918C6F0002489F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		856F53791B918C6E0002489F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				856F537A1B918C6E0002489F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		856F53881B918C6F0002489F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		856F53891B918C6F0002489F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		856F538B1B918C6F0002489F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "phone Freak/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		856F538C1B918C6F0002489F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "phone Freak/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		856F538E1B918C6F0002489F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "phone FreakTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/phone Freak.app/phone Freak";
+			};
+			name = Debug;
+		};
+		856F538F1B918C6F0002489F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "phone FreakTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/phone Freak.app/phone Freak";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		856F535F1B918C6E0002489F /* Build configuration list for PBXProject "phone Freak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				856F53881B918C6F0002489F /* Debug */,
+				856F53891B918C6F0002489F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		856F538A1B918C6F0002489F /* Build configuration list for PBXNativeTarget "phone Freak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				856F538B1B918C6F0002489F /* Debug */,
+				856F538C1B918C6F0002489F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		856F538D1B918C6F0002489F /* Build configuration list for PBXNativeTarget "phone FreakTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				856F538E1B918C6F0002489F /* Debug */,
+				856F538F1B918C6F0002489F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		856F536E1B918C6E0002489F /* phone_Freak.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				856F536F1B918C6E0002489F /* phone_Freak.xcdatamodel */,
+			);
+			currentVersion = 856F536F1B918C6E0002489F /* phone_Freak.xcdatamodel */;
+			path = phone_Freak.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 856F535C1B918C6E0002489F /* Project object */;
+}
