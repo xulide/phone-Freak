@@ -13,7 +13,7 @@
 #import "HistoryTimeInfo.h"
 #import "CurrentTimeInfo.h"
 #import "UIViewController+RegisterNotification.h"
-
+#import "CrudOperation.h"
 #import "UIViewController+getCurrentVisibleController.h"
 #import <CoreData/CoreData.h>
 
@@ -341,6 +341,30 @@ titleForHeaderInSection:(NSInteger)section {
     }];
     
     [self.coreDataInfo refreshAllManagedObjectContextToFault];
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView
+
+           editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath      //当在Cell上滑动时会调用此函数
+
+{
+    return  UITableViewCellEditingStyleDelete;
+}
+
+
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        NSManagedObject *deleteObject = (NSManagedObject*)[self.fetchedResultsController objectAtIndexPath:indexPath];
+        dispatch_queue_t asyncDeleteQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        dispatch_async(asyncDeleteQueue, ^{
+            [[CrudOperation shareInstance] deleteFromManagedObjectContext:deleteObject.objectID];
+        
+        });
+    }
 }
 
 - (void)dealloc

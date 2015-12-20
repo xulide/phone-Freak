@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <CoreData/NSManagedObject.h>
 @interface CrudOperation : NSObject
 -(BOOL)saveToStore;
 +(id)shareInstance;
+-(void)deleteFromManagedObjectContext:(NSManagedObjectID *)deleteManagedObjectID;
 @end

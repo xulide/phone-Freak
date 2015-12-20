@@ -343,6 +343,36 @@ typedef void (^TimeAndCoordinateInfoHandler)(void);
     }
 }
 
+-(void)deleteFromManagedObjectContext:(NSManagedObjectID *)deleteManagedObjectID
+{
+    if (!deleteManagedObjectID)
+    {
+        return;
+    }
+    
+    __block BOOL saveContextResult ;
+    
+    OSSpinLockLock(&_spinlock);
+    {
+        [self.coreDataInfo.crudManagedObjectContextInstance performBlockAndWait: ^{
+            [self.coreDataInfo.crudManagedObjectContextInstance deleteObject:[self.coreDataInfo.crudManagedObjectContextInstance objectWithID :deleteManagedObjectID]];
+            
+            saveContextResult = [self.coreDataInfo saveContext];
+
+        }];
+    }
+    
+    BOOL saveToStoreFlag = [self.coreDataInfo saveToStore];
+    
+    if (!(saveContextResult && saveToStoreFlag))
+    {
+        NSLog(@"deleteObject failed");
+    }
+    
+    return;
+}
+
+
 -(BOOL)saveToStore
 {
     return [self.coreDataInfo saveToStore];
