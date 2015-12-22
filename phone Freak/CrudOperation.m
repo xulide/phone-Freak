@@ -361,7 +361,7 @@ typedef void (^TimeAndCoordinateInfoHandler)(void);
 
         }];
     }
-    
+
     BOOL saveToStoreFlag = [self.coreDataInfo saveToStore];
     
     if (!(saveContextResult && saveToStoreFlag))

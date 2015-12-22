@@ -169,6 +169,7 @@ titleForHeaderInSection:(NSInteger)section {
                              withRowAnimation:UITableViewRowAnimationAutomatic];
             break;
         case NSFetchedResultsChangeDelete:
+            NSLog(@"didChangeObject  NSFetchedResultsChangeDelete");
             [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
                              withRowAnimation:UITableViewRowAnimationAutomatic];
             break;
@@ -358,6 +359,7 @@ titleForHeaderInSection:(NSInteger)section {
 {
     if (editingStyle == UITableViewCellEditingStyleDelete)
     {
+//        [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
         NSManagedObject *deleteObject = (NSManagedObject*)[self.fetchedResultsController objectAtIndexPath:indexPath];
         dispatch_queue_t asyncDeleteQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
         dispatch_async(asyncDeleteQueue, ^{

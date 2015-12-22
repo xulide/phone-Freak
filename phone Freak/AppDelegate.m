@@ -90,11 +90,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    UIDevice *device = [UIDevice currentDevice];
-    if (![[device model] isEqualToString:@"iPad Simulator"]) {
-        // 开始保存日志文件
-        [self redirectNSlogToDocumentFolder];
-    }
+//    UIDevice *device = [UIDevice currentDevice];
+//    if (![[device model] isEqualToString:@"iPad Simulator"]) {
+//        // 开始保存日志文件
+//        [self redirectNSlogToDocumentFolder];
+//    }
     
     NSLog(@"didFinishLaunchingWithOptions");
     
